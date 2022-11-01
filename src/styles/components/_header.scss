@@ -5,7 +5,7 @@
   padding: 14px 0;
 
   &__wrapper {
-    @include flex (space-between, center);
+    @include flex(space-between, center);
   }
 
   &__nav {

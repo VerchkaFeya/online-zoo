@@ -1,5 +1,5 @@
 .navigation {
-  @include flex (space-between, center);
+  @include flex(space-between, center);
   width: 100%;
 
   &__li {

@@ -4,7 +4,7 @@
   width: 298px;
   height: 54px;
   @include flex(center, center);
-  @include font (16px, 140%, 500);
+  @include font(16px, 140%, 500);
   color: $text-white;
   text-transform: uppercase;
   transition: $basic-transition;

@@ -1,7 +1,13 @@
-import { FacebookLogo, InstagramLogo, Logo, TwitterLogo, YouTubeLogo } from "../../svg"
-import { Button } from "../Button/Button"
-import { Navigation } from "../Navigation/Navigation"
-import { SubscribeForm } from "../SubscribeForm/SubscribeForm"
+import {
+  FacebookLogo,
+  InstagramLogo,
+  Logo,
+  TwitterLogo,
+  YouTubeLogo,
+} from "../../svg";
+import { Button } from "../Button/Button";
+import { Navigation } from "../Navigation/Navigation";
+import { SubscribeForm } from "../SubscribeForm/SubscribeForm";
 
 export const Footer = () => {
   return (
@@ -16,13 +22,33 @@ export const Footer = () => {
         </div>
         <div className="footer__row3">
           <ul className="footer__socials">
-            <li><FacebookLogo/><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            <li><TwitterLogo/><a href="https://twitter.com" target="_blank">Twitter</a></li>
-            <li><InstagramLogo/><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><YouTubeLogo/><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li>
+              <FacebookLogo />
+              <a href="https://www.facebook.com" target="_blank">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <TwitterLogo />
+              <a href="https://twitter.com" target="_blank">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <InstagramLogo />
+              <a href="https://www.instagram.com" target="_blank">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <YouTubeLogo />
+              <a href="https://www.youtube.com" target="_blank">
+                YouTube
+              </a>
+            </li>
           </ul>
           <nav className="footer__nav">
-            <Navigation type=""/>
+            <Navigation type="" />
           </nav>
           <div className="footer__copyright">
             <p>Designed by Alisa Samborskaya</p>
@@ -31,5 +57,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

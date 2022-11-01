@@ -9,10 +9,10 @@ export const Header = () => {
           <Logo />
         </div>
         <nav className="header__nav">
-          <Navigation type="header"/>
+          <Navigation type="header" />
         </nav>
         <p className="header__copyright">Designed by Vera Krasnova ©</p>
       </div>
     </header>
   );
-}
+};

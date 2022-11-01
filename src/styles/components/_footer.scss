@@ -5,7 +5,7 @@
   color: $text-white;
 
   &__row1 {
-    @include flex (space-between, flex-start);
+    @include flex(space-between, flex-start);
     margin: 0 0 36px 0;
   }
 
@@ -14,7 +14,7 @@
   }
 
   &__row3 {
-    @include flex (space-between, flex-end);
+    @include flex(space-between, flex-end);
   }
 
   &__nav {
@@ -22,10 +22,10 @@
   }
 
   &__copyright {
-    @include font (16px, 130%, 100);
-    @include flex (flex-start, flex-start);
+    @include font(16px, 130%, 100);
+    @include flex(flex-start, flex-start);
     flex-direction: column;
-    gap:  10px;
+    gap: 10px;
   }
 
   &__socials {
@@ -35,7 +35,7 @@
 
     li {
       @include flex(flex-start, flex-end);
-      @include font (16px, 140%, 400);
+      @include font(16px, 140%, 400);
       gap: 12px;
       cursor: pointer;
     }

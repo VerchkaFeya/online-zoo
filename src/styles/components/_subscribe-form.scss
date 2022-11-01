@@ -1,14 +1,14 @@
 .subscribe-form {
-  @include font (16px, 140%, 400);
-  @include flex (flex-start, center);
+  @include font(16px, 140%, 400);
+  @include flex(flex-start, center);
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 14px;
   width: 367px;
-  
+
   &__title {
     color: $text-white;
-    @include font (24px, 120%, 400);
+    @include font(24px, 120%, 400);
     flex: 1 1 100%;
   }
 
@@ -16,7 +16,7 @@
     height: 42px;
     border-radius: 2px;
     border: 1px solid $brand-color;
-    color: #BDBDBD;
+    color: #bdbdbd;
     padding: 10px;
     background-color: transparent;
 
