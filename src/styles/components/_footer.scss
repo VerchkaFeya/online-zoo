@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  background-color: $background-black;
+  padding: 40px 0 50px 0;
+  color: $text-white;
+
+  &__row1 {
+    @include flex(space-between, flex-start);
+    margin: 0 0 36px 0;
+  }
+
+  &__row2 {
+    margin: 0 0 44px 0;
+  }
+
+  &__row3 {
+    @include flex(space-between, flex-end);
+  }
+
+  &__nav {
+    width: 362px;
+  }
+
+  &__copyright {
+    @include font(16px, 130%, 100);
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__socials {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      @include flex(flex-start, flex-end);
+      @include font(16px, 140%, 400);
+      gap: 12px;
+      cursor: pointer;
+    }
+  }
+}

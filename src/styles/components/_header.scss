@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  background-color: $background-black;
+  color: $text-white;
+  padding: 14px 0;
+
+  &__wrapper {
+    @include flex(space-between, center);
+  }
+
+  &__nav {
+    width: 472px;
+    margin: 0 auto 0 63px;
+  }
+
+  &__copyright {
+    margin: 0 0 0 50px;
+  }
+}

@@ -1,0 +1,15 @@
+.navigation {
+  @include flex(space-between, center);
+  width: 100%;
+
+  &__li {
+    transition: $basic-transition;
+    &:hover {
+      color: $brand-color-hover;
+    }
+
+    &.active {
+      color: $brand-color;
+    }
+  }
+}

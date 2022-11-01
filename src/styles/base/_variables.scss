@@ -1,0 +1,31 @@
+// colors
+$text-white: #fff;
+$text-black: #000;
+$background-black: #000;
+$background-white: #fff;
+$brand-color: rgba(254, 144, 19, 1);
+$brand-color-hover: rgba(228, 114, 9, 1);
+$accent-hero-section-text: rgba(255, 238, 46, 1);
+$success-color: #4b9200;
+
+// width
+$wrapper-width: 1200px;
+$wrapper-side-paddings: 0 20px;
+
+// transition
+$basic-transition: 0.3s;
+
+// buttons
+$button-default-background: linear-gradient(
+  113.96deg,
+  #f9804b 1.49%,
+  #fe9013 101.44%
+);
+$button-hover-color: #e47209;
+$button-active-color: #4b9200;
+$button-disabled-color: #828282;
+
+$submit-button-background: #f1f3f2;
+$submit-button-default: rgba(51, 59, 65, 1);
+$submit-button-active: rgba(75, 146, 0, 1);
+$submit-button-error: rgba(211, 20, 20, 1);
