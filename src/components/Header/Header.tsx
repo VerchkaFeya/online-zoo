@@ -1,4 +1,4 @@
-import { LogoHeader } from "../../svg";
+import { Logo } from "../../svg";
 import { Navigation } from "../Navigation/Navigation";
 
 export const Header = () => {
@@ -6,10 +6,10 @@ export const Header = () => {
     <header className="header">
       <div className="wrapper header__wrapper">
         <div className="header__logo">
-          <LogoHeader />
+          <Logo />
         </div>
         <nav className="header__nav">
-          <Navigation />
+          <Navigation type="header"/>
         </nav>
         <p className="header__copyright">Designed by Vera Krasnova ©</p>
       </div>

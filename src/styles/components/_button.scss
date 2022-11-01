@@ -1,0 +1,26 @@
+.button {
+  background: $button-default-background;
+  background-color: $brand-color;
+  width: 298px;
+  height: 54px;
+  @include flex(center, center);
+  @include font (16px, 140%, 500);
+  color: $text-white;
+  text-transform: uppercase;
+  transition: $basic-transition;
+
+  &:hover {
+    background: none;
+    background-color: $button-hover-color;
+  }
+
+  &:active {
+    background: none;
+    background-color: $button-active-color;
+  }
+
+  &:disabled {
+    background: none;
+    background-color: $button-disabled-color;
+  }
+}

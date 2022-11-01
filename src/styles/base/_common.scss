@@ -13,6 +13,7 @@ body {
 }
 
 .App {
+  @include flex(flex-start, center);
   flex-direction: column;
   height: 100%;
 

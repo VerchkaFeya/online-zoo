@@ -1,0 +1,43 @@
+.subscribe-form {
+  @include font (16px, 140%, 400);
+  @include flex (flex-start, center);
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 14px;
+  width: 367px;
+  
+  &__title {
+    color: $text-white;
+    @include font (24px, 120%, 400);
+    flex: 1 1 100%;
+  }
+
+  &__input {
+    height: 42px;
+    border-radius: 2px;
+    border: 1px solid $brand-color;
+    color: #BDBDBD;
+    padding: 10px;
+    background-color: transparent;
+
+    &:focus {
+      border-color: $success-color;
+    }
+  }
+
+  &__button {
+    height: 42px;
+    width: 129px;
+    @include flex(center, center);
+    border-radius: 5px;
+    background-color: $submit-button-background;
+    border: 1px solid $submit-button-default;
+    color: $submit-button-default;
+    transition: $basic-transition;
+
+    &:active {
+      border: 1px solid $submit-button-active;
+      color: $submit-button-active;
+    }
+  }
+}
