@@ -1,10 +1,13 @@
 import { Footer, Header } from "./components";
+import { Hero } from "./sections";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main>something</main>
+      <main>
+        <Hero />
+      </main>
       <Footer />
     </div>
   );

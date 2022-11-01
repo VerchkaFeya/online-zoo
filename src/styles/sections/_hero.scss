@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("../../../public/hero-panda.png");
+  background-color: $background-black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 86px 0 100px 0;
+
+  &__content {
+    max-width: 500px;
+    @include flex(flex-start, center);
+    gap: 60px;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    @include font(107px, 75%, 700);
+    color: $text-white;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: $brand-color;
+      background: $brand-gradient;
+      width: 465px;
+      height: 465px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: -74px;
+      left: -74px;
+    }
+
+    span {
+      color: $accent-hero-section-text;
+    }
+  }
+}
