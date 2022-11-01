@@ -1,0 +1,19 @@
+.testimonials {
+
+  background-image: url("../../../public/testimonials-leaf.png");
+  background-repeat: no-repeat;
+  background-position: right 15% bottom -180px;
+  width: 100%;
+  padding: 140px 0 180px 0;
+
+  &__title {
+    @include font (36px, 130%, 400);
+    text-align: center;
+  }
+
+  &__cards {
+    width: 100%;
+    @include flex (space-between, center);
+    margin: 50px 0 20px 0;
+  }
+}
