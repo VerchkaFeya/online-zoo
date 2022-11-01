@@ -1,5 +1,5 @@
 import { Footer, Header } from "./components";
-import { Hero } from "./sections";
+import { Backstage, Hero } from "./sections";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Backstage />
       </main>
       <Footer />
     </div>

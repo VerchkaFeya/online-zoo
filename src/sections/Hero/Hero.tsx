@@ -2,7 +2,7 @@ import { Button } from "../../components";
 
 export const Hero = () => {
   return (
-    <section className="hero" style={{ backgroundImage: `` }}>
+    <section className="hero">
       <div className="wrapper">
         <div className="hero__content">
           <h1>
