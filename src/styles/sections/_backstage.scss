@@ -1,0 +1,38 @@
+.backstage {
+  padding: 140px 0 180px 0;
+  width: 100%;
+  background-image: url("../../../public/backstage-flowers.png");
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &__content {
+    width: 100%;
+    @include flex(space-between, center);
+    gap: 80px;
+  }
+
+  &__image {
+  }
+
+  &__info {
+  }
+
+  &__section-title {
+    @include font(48px, 120%, 400);
+  }
+
+  &__description {
+    @include font(16px, 130%, 400);
+    margin-top: 20px;
+  }
+
+  &__subtitle {
+    @include font(24px, 120%, 400);
+    margin-top: 54px;
+  }
+
+  &__text {
+    @include font(16px, 140%, 400);
+    margin-top: 34px;
+  }
+}
