@@ -1,5 +1,5 @@
 import { Footer, Header } from "./components";
-import { Backstage, Hero } from "./sections";
+import { Backstage, Hero, PickAndFeed } from "./sections";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <main>
         <Hero />
         <Backstage />
+        <PickAndFeed />
       </main>
       <Footer />
     </div>
