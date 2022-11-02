@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a237c254.css",
+    "main.js": "/static/js/main.a3d83151.js",
+    "static/media/hero-panda.png": "/static/media/hero-panda.c0cc8e2da0f50de3c931.png",
+    "static/media/logo-header.svg": "/static/media/logo-header.14ba6ce48229f9f417efc1cbe6176b80.svg",
+    "static/media/bamboo-cap.png": "/static/media/bamboo-cap.b1b5cb9a9ddcdbf6314f.png",
+    "static/media/backstage-flowers.png": "/static/media/backstage-flowers.197fc87c6c5375d2dd7d.png",
+    "static/media/image-8.png": "/static/media/image-8.05b7fc0bf9fc3dd77c32.png",
+    "static/media/image-3.png": "/static/media/image-3.9f16e8c846abaaaa71e4.png",
+    "static/media/image-5.png": "/static/media/image-5.fbb806500160ee21a219.png",
+    "static/media/image-1.png": "/static/media/image-1.fcebc56b1f11eb78f0f7.png",
+    "static/media/image-4.png": "/static/media/image-4.e7d2dadc927a42f3291b.png",
+    "static/media/image-6.png": "/static/media/image-6.329f47f3f0b0feece3a6.png",
+    "static/media/image-2.png": "/static/media/image-2.811edd468c0da69dfef4.png",
+    "static/media/testimonials-leaf.png": "/static/media/testimonials-leaf.8789e7707d04941f3a45.png",
+    "static/media/image-7.png": "/static/media/image-7.1bf532937b1248b083d1.png",
+    "static/media/herbivore.svg": "/static/media/herbivore.9e1502f472cdc5a75141feff3b195295.svg",
+    "static/media/predator.svg": "/static/media/predator.dd6d81d2e569d1e4a75a3e1bc5d12e3b.svg",
+    "static/media/instagram.svg": "/static/media/instagram.d1ddb7bb5656b720288bff0e954a8704.svg",
+    "static/media/twitter.svg": "/static/media/twitter.50fdc49757db2685af7f1f66108f14b8.svg",
+    "static/media/youtube.svg": "/static/media/youtube.7d30e54e146bef5f3258acda4d42e388.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.dc12715cc94b3e2da898a25e9a6e0187.svg",
+    "main.a237c254.css.map": "/static/css/main.a237c254.css.map",
+    "main.a3d83151.js.map": "/static/js/main.a3d83151.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a237c254.css",
+    "static/js/main.a3d83151.js"
+  ]
+}
