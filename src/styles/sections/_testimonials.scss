@@ -1,0 +1,70 @@
+.testimonials {
+  background-image: url("../../../public/testimonials-leaf.png");
+  background-repeat: no-repeat;
+  background-position: right 15% bottom -180px;
+  width: 100%;
+  padding: 140px 0 180px 0;
+
+  &__title {
+    @include font(36px, 130%, 400);
+    text-align: center;
+  }
+
+  &__cards {
+    width: 1155px;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+  }
+
+  &__cards-wrapper {
+    @include flex(flex-start, center);
+    position: relative;
+    gap: 25px;
+    transition: 0.5s;
+  }
+
+  &__progress-bar {
+    @include flex(center, center);
+    margin: 20px 0 30px 0;
+  }
+}
+
+.progress-bar {
+  &__range {
+    display: block;
+    -webkit-appearance: none;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 1px;
+    border-radius: 20px;
+    background-image: linear-gradient(#f1f3f2, #f1f3f2),
+      radial-gradient(
+        circle at top left,
+        rgba(254, 189, 171, 1),
+        rgba(243, 169, 248, 1),
+        #e0d8f0,
+        #eaf7fe,
+        #e0d8f0,
+        rgba(243, 169, 248, 1),
+        rgba(254, 189, 171, 1)
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    &::-webkit-slider-thumb {
+      width: calc(100% / 8);
+      -webkit-appearance: none;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      background-color: $brand-color;
+      height: 6px;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: $brand-color-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.testimonial-card {
+  width: 270px;
+  height: 390px;
+  flex: 0 0 auto;
+  padding: 15px 15px 20px 15px;
+  @include font(15px, 120%, 300);
+  color: $testimonial-text;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#f1f3f2, #f1f3f2),
+    radial-gradient(
+      circle at top left,
+      rgba(254, 189, 171, 1),
+      rgba(243, 169, 248, 1),
+      #e0d8f0,
+      #eaf7fe,
+      #e0d8f0,
+      rgba(243, 169, 248, 1),
+      rgba(254, 189, 171, 1)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  &__header {
+    @include flex(flex-start, center);
+    gap: 10px;
+  }
+
+  &__avatar {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $text-black;
+    @include font(16px, 120%, 400);
+  }
+
+  &__location,
+  &__time {
+    color: #bdbdbd;
+    display: inline;
+    margin-right: 10px;
+  }
+
+  &__text {
+    margin-top: 10px;
+    height: 308px;
+    overflow: hidden;
+  }
+}
