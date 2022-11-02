@@ -1,6 +1,7 @@
 .testimonial-card {
   width: 270px;
   height: 390px;
+  flex: 0 0 auto;
   padding: 15px 15px 20px 15px;
   @include font(15px, 120%, 300);
   color: $testimonial-text;
@@ -19,7 +20,6 @@
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
-
 
   &__header {
     @include flex(flex-start, center);
