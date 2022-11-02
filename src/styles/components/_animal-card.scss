@@ -1,0 +1,60 @@
+.animal-card {
+  width: 366px;
+  height: 426px;
+  border: 1px solid $brand-color;
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 0 0 auto;
+
+  &__image {
+    display: block;
+    height: 366px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 8px 16px 8px 14px;
+    @include flex(space-between, center);
+  }
+
+  &__name {
+    @include font(16px, 140%, 500);
+    text-transform: uppercase;
+  }
+
+  &__location {
+    @include font(15px, 120%, 300);
+  }
+}
+
+// .animal-card {
+//   width: 294px;
+//   height: 354px;
+//   border: 1px solid $brand-color;
+//   border-radius: 5px;
+//   overflow: hidden;
+//   flex: 0 0 auto;
+
+//   &__image {
+//     display: block;
+//   }
+
+//   &__info {
+//     padding: 8px 16px 8px 14px;
+//     @include flex(space-between, center);
+//   }
+
+//   &__name {
+//     @include font(16px, 140%, 500);
+//     text-transform: uppercase;
+//   }
+
+//   &__location {
+//     @include font(15px, 120%, 300);
+//   }
+// }

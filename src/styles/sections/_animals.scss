@@ -1,0 +1,49 @@
+.animals {
+  padding: 0 0 100px 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 1364px;
+    padding: 0 20px;
+  }
+
+  &__slider {
+    margin: 0 0 60px 0;
+    @include flex(center, center);
+  }
+
+  &__arrow {
+    flex: 0 0 auto;
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: $brand-color;
+    color: $text-white;
+    @include flex(center, center);
+    transition: $basic-transition;
+    cursor: pointer;
+
+    &_prev {
+      margin-right: 20px;
+    }
+
+    &_next {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      background-color: $brand-color-hover;
+    }
+  }
+
+  &__cards {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  &__button {
+    @include flex(center, center);
+  }
+}
