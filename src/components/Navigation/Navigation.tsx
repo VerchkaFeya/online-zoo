@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 type TNavigation = {
   type: string;
@@ -8,21 +9,21 @@ export const Navigation: FC<TNavigation> = ({ type }) => {
   return (
     <ul className="navigation">
       <li className="navigation__li active">
-        <a href="about">About</a>
+        <Link to="/">About</Link>
       </li>
       <li className="navigation__li">
-        <a href="map">Map</a>
+        <Link to="/">Map</Link>
       </li>
       <li className="navigation__li">
-        <a href="zoos">Zoos</a>
+        <Link to="/">Zoos</Link>
       </li>
       {type && (
         <li className="navigation__li">
-          <a href="donate">Donate</a>
+          <Link to="/donate">Donate</Link>
         </li>
       )}
       <li className="navigation__li">
-        <a href="contact-us">Contact us</a>
+        <a href="#contact-us">Contact us</a>
       </li>
     </ul>
   );

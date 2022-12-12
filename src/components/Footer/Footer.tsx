@@ -11,7 +11,7 @@ import { SubscribeForm } from "../SubscribeForm/SubscribeForm";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact-us">
       <div className="wrapper">
         <div className="footer__row1">
           <Logo />
