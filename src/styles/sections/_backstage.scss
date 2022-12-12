@@ -5,16 +5,45 @@
   background-position: right;
   background-repeat: no-repeat;
 
+  @include media-big-desktop {
+    background-image: none;
+    padding: 100px 0 140px 0;
+  }
+
+  @include media-small-desktop {
+    background-image: url("../../../public/backstage-flowers.png");
+    padding: 60px 0 80px 0;
+    background-size: auto 450px;
+  }
+
   &__content {
     width: 100%;
     @include flex(space-between, center);
     gap: 80px;
+
+    @include media-big-desktop {
+      gap: 30px;
+    }
   }
 
   &__image {
+    max-width: 50%;
+    @include media-big-desktop {
+      width: 455px;
+      height: 408px;
+      object-fit: cover;
+      object-position: center;
+    }
+    @include media-small-desktop {
+      display: none;
+    }
   }
 
   &__info {
+    flex: 0 1 auto;
+    @include media-small-desktop {
+      width: 80%;
+    }
   }
 
   &__section-title {
@@ -29,10 +58,16 @@
   &__subtitle {
     @include font(24px, 120%, 400);
     margin-top: 54px;
+    @include media-small-desktop {
+      margin-top: 30px;
+    }
   }
 
   &__text {
     @include font(16px, 140%, 400);
     margin-top: 34px;
+    @include media-small-desktop {
+      margin-top: 20px;
+    }
   }
 }

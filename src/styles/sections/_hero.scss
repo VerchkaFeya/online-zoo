@@ -7,12 +7,22 @@
   width: 100%;
   padding: 86px 0 100px 0;
 
+  @include media-small-desktop {
+    padding: 40px 0 50px 0;
+    overflow: hidden;
+    background-size: cover;
+  }
+
   &__content {
     max-width: 500px;
     @include flex(flex-start, center);
     gap: 60px;
     flex-direction: column;
     margin: 0 0 0 auto;
+
+    @include media-small-desktop {
+      gap: 40px;
+    }
   }
 
   h1 {
@@ -22,6 +32,9 @@
     text-align: center;
     position: relative;
     z-index: 10;
+    @include media-small-desktop {
+      @include font(85px, 75%, 700);
+    }
 
     &::before {
       content: "";
@@ -35,6 +48,13 @@
       z-index: -1;
       top: -74px;
       left: -74px;
+
+      @include media-small-desktop {
+        width: 367px;
+        height: 367px;
+        top: -54px;
+        left: -74px;
+      }
     }
 
     span {

@@ -2,4 +2,24 @@
   margin: 0 auto;
   max-width: $wrapper-width;
   padding: $wrapper-side-paddings;
+
+  @include media-big-desktop {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  @include media-small-desktop {
+    max-width: 1000px;
+    padding: 0 30px;
+  }
+
+  @include media-tablet {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+
+  @include media-mobile {
+    max-width: 320px;
+    padding: 10px;
+  }
 }

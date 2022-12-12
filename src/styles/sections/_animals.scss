@@ -3,8 +3,12 @@
 
   &__wrapper {
     margin: 0 auto;
-    width: 1364px;
+    max-width: 1364px;
     padding: 0 20px;
+
+    @include media-big-desktop {
+      max-width: 1200px;
+    }
   }
 
   &__slider {
@@ -24,12 +28,22 @@
     transition: $basic-transition;
     cursor: pointer;
 
+    @include media-big-desktop {
+      position: absolute;
+    }
+
     &_prev {
       margin-right: 20px;
+      @include media-big-desktop {
+        margin-right: 147px;
+      }
     }
 
     &_next {
       margin-left: 20px;
+      @include media-big-desktop {
+        margin-left: 147px;
+      }
     }
 
     &:hover {
@@ -41,6 +55,13 @@
     @include flex(space-between, center);
     flex-wrap: wrap;
     row-gap: 20px;
+    flex: 0 1 auto;
+
+    @include media-big-desktop {
+      row-gap: 92px;
+      column-gap: 29px;
+      @include flex(center, center);
+    }
   }
 
   &__button {

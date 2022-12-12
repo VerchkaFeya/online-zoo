@@ -16,7 +16,7 @@ export const Hero = () => {
             <br />
             online
           </h1>
-          <Button form="round">watсh online</Button>
+          <Button form="round">watch online</Button>
         </div>
       </div>
     </section>

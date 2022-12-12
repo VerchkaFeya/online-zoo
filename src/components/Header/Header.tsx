@@ -11,7 +11,9 @@ export const Header = () => {
         <nav className="header__nav">
           <Navigation type="header" />
         </nav>
-        <p className="header__copyright">Designed by Vera Krasnova ©</p>
+        <a href="#" className="header__copyright">
+          Designed by ©
+        </a>
       </div>
     </header>
   );

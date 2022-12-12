@@ -15,5 +15,5 @@ export {
   YouTubeLogo,
   Herbivore,
   Predator,
-  Panda
+  Panda,
 };
