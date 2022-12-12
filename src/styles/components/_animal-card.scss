@@ -5,10 +5,32 @@
   border-radius: 5px;
   overflow: hidden;
   flex: 0 0 auto;
+  cursor: pointer;
+  transition: $basic-transition;
+
+  img {
+    transition: 1s;
+  }
+  
+
+  &:hover {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    .animal-card__image img {
+      filter: brightness(40%);
+      transform: scale(1.2);
+    }
+    .animal-card__info {
+      transform: translateY(-70%);
+      color: $text-white;
+    }
+  }
 
   &__image {
+    background-color: black;
     display: block;
     height: 366px;
+    transition: 1s;
 
     img {
       width: 100%;
@@ -20,6 +42,8 @@
   &__info {
     padding: 8px 16px 8px 14px;
     @include flex(space-between, center);
+    transform: translate(0, 0);
+    transition: 1s;
   }
 
   &__name {
