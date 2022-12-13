@@ -12,7 +12,7 @@ import { SubscribeForm } from "../SubscribeForm/SubscribeForm";
 export const Footer = () => {
   return (
     <footer className="footer" id="contact-us">
-      <div className="wrapper">
+      <div className="wrapper footer__wrapper">
         <div className="footer__row1">
           <Logo />
           <SubscribeForm />
@@ -23,27 +23,43 @@ export const Footer = () => {
         <div className="footer__row3">
           <ul className="footer__socials">
             <li>
-              <FacebookLogo />
-              <a href="https://www.facebook.com" target="_blank">
-                Facebook
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                className="footer__social-link"
+              >
+                <FacebookLogo />
+                <span className="footer__social-name">Facebook</span>
               </a>
             </li>
             <li>
-              <TwitterLogo />
-              <a href="https://twitter.com" target="_blank">
-                Twitter
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                className="footer__social-link"
+              >
+                <TwitterLogo />
+                <span className="footer__social-name">Twitter</span>
               </a>
             </li>
             <li>
-              <InstagramLogo />
-              <a href="https://www.instagram.com" target="_blank">
-                Instagram
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                className="footer__social-link"
+              >
+                <InstagramLogo />
+                <span className="footer__social-name">Instagram</span>
               </a>
             </li>
             <li>
-              <YouTubeLogo />
-              <a href="https://www.youtube.com" target="_blank">
-                YouTube
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                className="footer__social-link"
+              >
+                <YouTubeLogo />
+                <span className="footer__social-name">YouTube</span>
               </a>
             </li>
           </ul>

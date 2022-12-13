@@ -6,6 +6,10 @@
   row-gap: 14px;
   width: 367px;
 
+  @include media-small-desktop {
+    display: none;
+  }
+
   &__title {
     color: $text-white;
     @include font(24px, 120%, 400);
