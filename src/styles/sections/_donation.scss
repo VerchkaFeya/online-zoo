@@ -25,8 +25,18 @@
       #eaf7fe 149.54%
     );
 
+    @include media-tablet {
+      padding: 20px 0 20px 0;
+    }
+    
+
   &__title {
     color: $text-white;
+
+    @include media-tablet {
+      @include font(24px, 120%, 400);
+    }
+    
   }
 
   &__text {
@@ -38,6 +48,11 @@
   &__subtitle {
     color: $brand-color;
     margin: 40px 0 60px 0;
+
+    @include media-tablet {
+      @include font(24px, 120%, 400);
+      margin: 30px 0;
+    }
   }
 }
 
@@ -49,16 +64,32 @@
   padding: 40px 90px 60px 90px;
   @include font(16px, 140%, 400);
 
+  @include media-big-desktop {
+    padding: 20px 45px 45px 45px;
+  }
+
+  @include media-small-desktop {
+    padding: 20px 15px 25px 15px;
+  }
+
   &__title {
     @include font(48px, 120%, 400);
     color: $brand-color;
     text-align: center;
+
+    @include media-tablet {
+      @include font(24px, 120%, 400);
+    }
   }
 
   &__subtitle {
     @include font(24px, 120%, 400);
     color: $text-black;
     margin-top: 20px;
+
+    @include media-tablet {
+      @include font(16px, 120%, 400);
+    }
   }
 
   &__button {
@@ -79,6 +110,12 @@
     border: none;
     border: 1px solid #929699;
     border-radius: 2px;
+    
+    @include media-tablet {
+      margin: 25px 0 15px 0;
+      width: 60%;
+      height: 42px;
+    }
 
     &:focus {
       border-color: $success-color;
@@ -114,7 +151,16 @@
       cursor: pointer;
 
       &:checked {
-        background-color: $brand-color;
+        @include flex (center, center);
+
+        &::after {
+          content: '';
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $brand-color;
+        }
       }
     }
   }
@@ -130,6 +176,11 @@
   gap: 30px;
   margin: 60px 0 50px 0;
 
+  @include media-tablet {
+    gap: 10px;
+    margin: 15px 0;
+  }
+
   &__amount {
     @include flex(center, flex-start);
     flex-direction: column;
@@ -140,11 +191,26 @@
   &__number {
     @include font(72px, 80%, 500);
     width: 100%;
+
+    @include media-tablet {
+      @include font(40px, 80%, 400);
+    }
   }
 
   &__text {
     @include font(16px, 140%, 400);
     width: 100%;
+
+    @include media-tablet {
+      @include font(10px, 140%, 400);
+    }
+  }
+
+  &__image svg {
+    @include media-tablet {
+      width: 160px;
+      height: auto;
+    }
   }
 }
 
@@ -162,6 +228,10 @@
     width: 100%;
     z-index: 0;
     border-radius: 2px;
+    
+    @include media-tablet {
+      height: 14px;
+    }
   }
 
   &::after {
@@ -169,11 +239,14 @@
     position: absolute;
     background-color: #72828e;
     height: 2px;
-    // padding: 0 150px;
     width: 100%;
     top: 12px;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include media-tablet {
+      top: 7px;
+    }
   }
 
   &__circle {
@@ -182,6 +255,23 @@
     gap: 20px;
     margin-top: 8px;
     flex-basis: 70px;
+
+    @include media-big-desktop {
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+
+    @include media-small-desktop {
+      &:nth-child(2), 
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    @include media-tablet {
+      margin-top: 5px;
+    }
   }
 
   input {
@@ -195,10 +285,19 @@
     background-color: #ffee2e;
     cursor: pointer;
     z-index: 100;
+    
+    @include media-tablet {
+      width: 5px;
+      height: 5px;
+    }
   }
 
   label {
     cursor: pointer;
+
+    @include media-tablet {
+      @include font(13px, 140%, 400);
+    }
   }
 
   input:checked {
@@ -212,16 +311,30 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include media-tablet {
+        border: 2px solid $brand-color;
+      }
     }
 
     &::before {
       width: 23px;
       height: 23px;
+
+      @include media-tablet {
+        width: 12px;
+        height: 12px;
+      }
     }
 
     &::after {
       width: 40px;
       height: 40px;
+
+      @include media-tablet {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@
   width: 100%;
   padding: 86px 0 100px 0;
 
-  @include media-small-desktop {
+  @include media-big-desktop {
     padding: 40px 0 50px 0;
     overflow: hidden;
     background-size: cover;
@@ -21,7 +21,17 @@
     margin: 0 0 0 auto;
 
     @include media-small-desktop {
-      gap: 40px;
+      width: 100%;
+      max-width: 100%;
+      gap: 25px;
+    }
+  }
+
+  &__button {
+    align-self: center;
+
+    @include media-small-desktop {
+      align-self: flex-start;
     }
   }
 
@@ -32,8 +42,9 @@
     text-align: center;
     position: relative;
     z-index: 10;
-    @include media-small-desktop {
+    @include media-big-desktop {
       @include font(85px, 75%, 700);
+      align-self: flex-end;
     }
 
     &::before {
@@ -49,11 +60,15 @@
       top: -74px;
       left: -74px;
 
-      @include media-small-desktop {
+      @include media-big-desktop {
         width: 367px;
         height: 367px;
         top: -54px;
         left: -74px;
+      }
+
+      @include media-small-desktop {
+        top: -20px;
       }
     }
 
