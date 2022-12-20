@@ -16,5 +16,9 @@
   &__copyright {
     margin: 0 0 0 50px;
     flex: 0 0 auto;
+
+    @include media-tablet {
+      display: none;
+    }
   }
 }

@@ -45,6 +45,7 @@
     width: 362px;
     @include media-tablet {
       order: 3;
+      width: 280px;
     }
   }
 

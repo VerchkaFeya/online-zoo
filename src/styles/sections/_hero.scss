@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../../public/hero-panda.png");
+  background-image: url('../../../public/hero-panda.png');
   background-color: $background-black;
   background-repeat: no-repeat;
   background-position: center;
@@ -47,8 +47,12 @@
       align-self: flex-end;
     }
 
+    @include media-tablet {
+      @include font(54px, 75%, 700);
+    }
+
     &::before {
-      content: "";
+      content: '';
       display: block;
       background-color: $brand-color;
       background: $brand-gradient;
@@ -69,6 +73,10 @@
 
       @include media-small-desktop {
         top: -20px;
+      }
+      @include media-tablet {
+        width: 230px;
+        height: 230px;
       }
     }
 
