@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-zoo/static/css/main.127cef98.css",
-    "main.js": "/online-zoo/static/js/main.155146e6.js",
+    "main.css": "/online-zoo/static/css/main.6a81c5dc.css",
+    "main.js": "/online-zoo/static/js/main.81cf491a.js",
     "static/media/hero-panda.png": "/online-zoo/static/media/hero-panda.c0cc8e2da0f50de3c931.png",
     "static/media/logo-header.svg": "/online-zoo/static/media/logo-header.14ba6ce48229f9f417efc1cbe6176b80.svg",
     "static/media/bamboo-cap.png": "/online-zoo/static/media/bamboo-cap.b1b5cb9a9ddcdbf6314f.png",
@@ -23,11 +23,11 @@
     "static/media/youtube.svg": "/online-zoo/static/media/youtube.7d30e54e146bef5f3258acda4d42e388.svg",
     "index.html": "/online-zoo/index.html",
     "static/media/facebook.svg": "/online-zoo/static/media/facebook.dc12715cc94b3e2da898a25e9a6e0187.svg",
-    "main.127cef98.css.map": "/online-zoo/static/css/main.127cef98.css.map",
-    "main.155146e6.js.map": "/online-zoo/static/js/main.155146e6.js.map"
+    "main.6a81c5dc.css.map": "/online-zoo/static/css/main.6a81c5dc.css.map",
+    "main.81cf491a.js.map": "/online-zoo/static/js/main.81cf491a.js.map"
   },
   "entrypoints": [
-    "static/css/main.127cef98.css",
-    "static/js/main.155146e6.js"
+    "static/css/main.6a81c5dc.css",
+    "static/js/main.81cf491a.js"
   ]
 }
