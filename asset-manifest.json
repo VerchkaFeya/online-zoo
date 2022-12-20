@@ -1,22 +1,33 @@
 {
   "files": {
-    "main.css": "/online-zoo/static/css/main.1ed9a3b7.css",
-    "main.js": "/online-zoo/static/js/main.81eba4fd.js",
+    "main.css": "/online-zoo/static/css/main.127cef98.css",
+    "main.js": "/online-zoo/static/js/main.155146e6.js",
     "static/media/hero-panda.png": "/online-zoo/static/media/hero-panda.c0cc8e2da0f50de3c931.png",
     "static/media/logo-header.svg": "/online-zoo/static/media/logo-header.14ba6ce48229f9f417efc1cbe6176b80.svg",
     "static/media/bamboo-cap.png": "/online-zoo/static/media/bamboo-cap.b1b5cb9a9ddcdbf6314f.png",
     "static/media/backstage-flowers.png": "/online-zoo/static/media/backstage-flowers.197fc87c6c5375d2dd7d.png",
+    "static/media/image-8.png": "/online-zoo/static/media/image-8.05b7fc0bf9fc3dd77c32.png",
+    "static/media/image-3.png": "/online-zoo/static/media/image-3.9f16e8c846abaaaa71e4.png",
+    "static/media/image-5.png": "/online-zoo/static/media/image-5.fbb806500160ee21a219.png",
+    "static/media/image-1.png": "/online-zoo/static/media/image-1.fcebc56b1f11eb78f0f7.png",
+    "static/media/image-4.png": "/online-zoo/static/media/image-4.e7d2dadc927a42f3291b.png",
+    "static/media/image-6.png": "/online-zoo/static/media/image-6.329f47f3f0b0feece3a6.png",
+    "static/media/image-2.png": "/online-zoo/static/media/image-2.811edd468c0da69dfef4.png",
     "static/media/testimonials-leaf.png": "/online-zoo/static/media/testimonials-leaf.8789e7707d04941f3a45.png",
+    "static/media/image-7.png": "/online-zoo/static/media/image-7.1bf532937b1248b083d1.png",
+    "static/media/panda.svg": "/online-zoo/static/media/panda.4665c349e9671c45916cd7b19088ea34.svg",
+    "static/media/herbivore.svg": "/online-zoo/static/media/herbivore.6851cc0c05bf72d775035dfc8139d951.svg",
+    "static/media/predator.svg": "/online-zoo/static/media/predator.4d441314d69ab027f23f4fce2951f822.svg",
     "static/media/instagram.svg": "/online-zoo/static/media/instagram.d1ddb7bb5656b720288bff0e954a8704.svg",
     "static/media/twitter.svg": "/online-zoo/static/media/twitter.50fdc49757db2685af7f1f66108f14b8.svg",
     "static/media/youtube.svg": "/online-zoo/static/media/youtube.7d30e54e146bef5f3258acda4d42e388.svg",
     "index.html": "/online-zoo/index.html",
     "static/media/facebook.svg": "/online-zoo/static/media/facebook.dc12715cc94b3e2da898a25e9a6e0187.svg",
-    "main.1ed9a3b7.css.map": "/online-zoo/static/css/main.1ed9a3b7.css.map",
-    "main.81eba4fd.js.map": "/online-zoo/static/js/main.81eba4fd.js.map"
+    "main.127cef98.css.map": "/online-zoo/static/css/main.127cef98.css.map",
+    "main.155146e6.js.map": "/online-zoo/static/js/main.155146e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ed9a3b7.css",
-    "static/js/main.81eba4fd.js"
+    "static/css/main.127cef98.css",
+    "static/js/main.155146e6.js"
   ]
 }
