@@ -1,4 +1,10 @@
-import { Backstage, Hero, PickAndFeed, Testimonials, Animals } from "../sections";
+import {
+  Backstage,
+  Hero,
+  PickAndFeed,
+  Testimonials,
+  Animals,
+} from "../sections";
 
 export const HomePage = () => {
   return (

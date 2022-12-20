@@ -62,7 +62,6 @@ export const Donation = () => {
                 name="donation-amount"
                 value="1000"
                 id="amount-1000"
-                checked
               />
               <label htmlFor="amount-1000">$1000</label>
             </div>
@@ -72,6 +71,7 @@ export const Donation = () => {
                 name="donation-amount"
                 value="500"
                 id="amount-500"
+                checked
               />
               <label htmlFor="amount-500">$500</label>
             </div>

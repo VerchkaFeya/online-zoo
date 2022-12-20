@@ -1,6 +1,37 @@
 .navigation {
-  @include flex(space-between, center);
   width: 100%;
+
+  &__list {
+    @include flex(space-between, center);
+    width: 100%;
+
+    &_header {
+      @include media-tablet {
+        position: absolute;
+        background-color: $background-white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        @include font(28px, 140%, 400);
+        color: $text-black;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        z-index: 30;
+        display: none;
+
+        &.active {
+          display: flex;
+        }
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
 
   &__li {
     transition: $basic-transition;
@@ -10,6 +41,10 @@
 
     &.active {
       color: $brand-color;
+    }
+
+    @include media-tablet {
+      margin: 10px 0;
     }
   }
 }

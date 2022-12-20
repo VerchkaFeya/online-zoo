@@ -21,6 +21,15 @@
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
+  @include media-tablet {
+    width: 100%;
+    height: 109px;
+
+    &:not(:nth-child(-n + 3)) {
+      display: none;
+    }
+  }
+
   &__header {
     @include flex(flex-start, center);
     gap: 10px;
@@ -41,12 +50,27 @@
   &__time {
     color: #bdbdbd;
     display: inline;
-    margin-right: 10px;
+  }
+
+  &__location {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #bdbdbd;
+      margin: 0 5px 2px 5px;
+    }
   }
 
   &__text {
     margin-top: 10px;
     height: 308px;
     overflow: hidden;
+
+    @include media-tablet {
+      height: 38px;
+    }
   }
 }

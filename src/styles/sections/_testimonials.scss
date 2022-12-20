@@ -5,15 +5,44 @@
   width: 100%;
   padding: 140px 0 180px 0;
 
+  @include media-big-desktop {
+    padding: 100px 0 140px 0;
+    background-position: right 10% bottom -180px;
+  }
+
+  @include media-small-desktop {
+    padding: 60px 0 80px 0;
+    background-position: right 0 bottom -120px;
+    background-size: auto 300px;
+  }
+
+  @include media-tablet {
+    padding: 30px 0 60px 0;
+    background-position: right -30% bottom -100px;
+    background-size: auto 250px;
+  }
+
   &__title {
     @include font(36px, 130%, 400);
     text-align: center;
   }
 
   &__cards {
-    width: 1155px;
+    max-width: 1155px;
     margin: 50px auto 0 auto;
     overflow: hidden;
+
+    @include media-big-desktop {
+      max-width: 860px;
+    }
+
+    @include media-small-desktop {
+      max-width: 564px;
+    }
+
+    @include media-tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__cards-wrapper {
@@ -21,11 +50,26 @@
     position: relative;
     gap: 25px;
     transition: 0.5s;
+
+    @include media-tablet {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__progress-bar {
     @include flex(center, center);
     margin: 20px 0 30px 0;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include media-tablet {
+      @include flex(center, center);
+    }
   }
 }
 
@@ -52,6 +96,7 @@
       );
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    cursor: pointer;
 
     &::-webkit-slider-thumb {
       width: calc(100% / 8);
@@ -61,6 +106,13 @@
       background-color: $brand-color;
       height: 6px;
       border-radius: 3px;
+      @include media-big-desktop {
+        width: calc(100% / 10);
+      }
+
+      @include media-small-desktop {
+        width: calc(100% / 10);
+      }
 
       &:hover {
         background-color: $brand-color-hover;

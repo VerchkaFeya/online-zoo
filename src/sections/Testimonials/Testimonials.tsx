@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, TestimonialCard } from "../../components";
 import { testimonialsData } from "./data";
 
 export const Testimonials = () => {
   const [rangeValue, setRangeValue] = useState("0");
+
+  const screenWidth = window.screen.availWidth;
 
   return (
     <section className="testimonials">
@@ -23,7 +25,7 @@ export const Testimonials = () => {
           <input
             type="range"
             min="0"
-            max="7"
+            max={screenWidth > 1440 ? "7" : "10"}
             step="1"
             value={rangeValue}
             className="progress-bar__range"
@@ -32,7 +34,9 @@ export const Testimonials = () => {
             }
           />
         </div>
-        <Button form="square">Leave feedback</Button>
+        <div className="testimonials__button">
+          <Button form="square">Leave feedback</Button>
+        </div>
       </div>
     </section>
   );

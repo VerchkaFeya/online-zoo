@@ -4,21 +4,49 @@
   padding: 40px 0 50px 0;
   color: $text-white;
 
+  @include media-small-desktop {
+    padding: 12px 0;
+  }
+
+  &__wrapper {
+    @include media-small-desktop {
+      position: relative;
+    }
+  }
+
   &__row1 {
     @include flex(space-between, flex-start);
     margin: 0 0 36px 0;
+    @include media-tablet {
+      @include flex(center, center);
+      margin-bottom: 50px;
+    }
   }
 
   &__row2 {
     margin: 0 0 44px 0;
+    @include media-tablet {
+      @include flex(center, center);
+      margin-bottom: 30px;
+    }
   }
 
   &__row3 {
     @include flex(space-between, flex-end);
+    gap: 20px;
+
+    @include media-tablet {
+      flex-direction: column;
+      @include flex(center, center);
+    }
   }
 
   &__nav {
     width: 362px;
+    @include media-tablet {
+      order: 3;
+      width: 280px;
+    }
   }
 
   &__copyright {
@@ -26,6 +54,11 @@
     @include flex(flex-start, flex-start);
     flex-direction: column;
     gap: 10px;
+
+    @include media-small-desktop {
+      align-self: flex-end;
+      flex: 1 0 auto;
+    }
   }
 
   &__socials {
@@ -33,11 +66,37 @@
     flex-direction: column;
     gap: 10px;
 
-    li {
-      @include flex(flex-start, flex-end);
-      @include font(16px, 140%, 400);
-      gap: 12px;
-      cursor: pointer;
+    @include media-small-desktop {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+
+    @include media-tablet {
+      @include flex(center, center);
+      flex-direction: row;
+      top: 80px;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__social-link {
+    @include flex(flex-start, flex-end);
+    @include font(16px, 140%, 400);
+    gap: 12px;
+    cursor: pointer;
+    transition: $basic-transition;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+
+  &__social-name {
+    @include media-small-desktop {
+      display: none;
     }
   }
 }

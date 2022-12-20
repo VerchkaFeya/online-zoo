@@ -24,26 +24,47 @@
     );
   padding: 70px 0 100px 0;
 
-  &__wrapper {
+  &__content {
     background-color: rgba(253, 253, 255, 0.52);
     border-radius: 20px;
     padding: 40px 100px 60px 100px;
+
+    @include media-big-desktop {
+      padding: 30px 90px 50px 90px;
+    }
+
+    @include media-small-desktop {
+      padding: 10px 30px 60px 30px;
+    }
   }
 
   &__title {
     color: $brand-color;
     @include font(48px, 120%, 400);
     text-align: center;
+
+    @include media-small-desktop {
+      @include font(42px, 120%, 400);
+    }
   }
 
   &__subtitle {
     @include font(24px, 120%, 400);
     margin-top: 30px;
+
+    @include media-small-desktop {
+      @include font(22px, 120%, 400);
+      margin-top: 20px;
+    }
   }
 
   &__bold-text {
     @include font(16px, 130%, 500);
     margin-top: 40px;
+
+    @include media-small-desktop {
+      margin-top: 20px;
+    }
   }
 
   &__text {
@@ -55,6 +76,14 @@
     @include font(36px, 130%, 400);
     margin-top: 60px;
     text-align: center;
+
+    @include media-big-desktop {
+      margin-top: 40px;
+    }
+
+    @include media-small-desktop {
+      margin-top: 30px;
+    }
   }
 
   &__button {
@@ -65,12 +94,24 @@
 .feed-schema {
   @include flex(space-between, flex-start);
   margin: 40px 0 60px 0;
+  position: relative;
+
+  @include media-tablet {
+    flex-direction: column;
+    gap: 10px;
+  }
 
   &__card {
     width: 168px;
     @include flex(flex-start, center);
     flex-direction: column;
     gap: 30px;
+
+    @include media-tablet {
+      gap: 10px;
+      margin: 0 auto;
+      @include flex(flex-start, flex-start);
+    }
   }
 
   &__image {
@@ -85,6 +126,7 @@
 
   &__card-text {
     @include font(16px, 140%, 400);
+    text-align: left;
   }
 
   &__arrow {
@@ -94,5 +136,52 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 75px;
+
+    @include media-small-desktop {
+      position: relative;
+      width: 65px;
+      height: 70px;
+      margin: 0;
+      background-image: none;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../public/schema-arrow-green.png");
+        transform: rotate(-130deg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: -10px;
+        width: 65px;
+        height: 70px;
+      }
+    }
+
+    @include media-tablet {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      margin: 0 auto;
+      background-image: none;
+      display: hidden;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../public/schema-arrow-green.png");
+        background-repeat: no-repeat;
+        transform: rotate(-40deg);
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        width: 65px;
+        height: 70px;
+      }
+    }
   }
 }

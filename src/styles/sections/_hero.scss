@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../../public/hero-panda.png");
+  background-image: url('../../../public/hero-panda.png');
   background-color: $background-black;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,12 +7,32 @@
   width: 100%;
   padding: 86px 0 100px 0;
 
+  @include media-big-desktop {
+    padding: 40px 0 50px 0;
+    overflow: hidden;
+    background-size: cover;
+  }
+
   &__content {
     max-width: 500px;
     @include flex(flex-start, center);
     gap: 60px;
     flex-direction: column;
     margin: 0 0 0 auto;
+
+    @include media-small-desktop {
+      width: 100%;
+      max-width: 100%;
+      gap: 25px;
+    }
+  }
+
+  &__button {
+    align-self: center;
+
+    @include media-small-desktop {
+      align-self: flex-start;
+    }
   }
 
   h1 {
@@ -22,9 +42,17 @@
     text-align: center;
     position: relative;
     z-index: 10;
+    @include media-big-desktop {
+      @include font(85px, 75%, 700);
+      align-self: flex-end;
+    }
+
+    @include media-tablet {
+      @include font(54px, 75%, 700);
+    }
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       background-color: $brand-color;
       background: $brand-gradient;
@@ -35,6 +63,21 @@
       z-index: -1;
       top: -74px;
       left: -74px;
+
+      @include media-big-desktop {
+        width: 367px;
+        height: 367px;
+        top: -54px;
+        left: -74px;
+      }
+
+      @include media-small-desktop {
+        top: -20px;
+      }
+      @include media-tablet {
+        width: 230px;
+        height: 230px;
+      }
     }
 
     span {
